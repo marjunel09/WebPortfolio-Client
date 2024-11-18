@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'http://localhost:4000' }); // Backend URL
+const API = axios.create({ baseURL: 'https://webportfolio-backend.onrender.com' }); // Backend URL
 
 export const fetchProjects = () => API.get('/projects');
 

@@ -19,7 +19,7 @@ export default function ContactForm() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await axios.post("http://localhost:4000/api/send-email", formData);
+      const response = await axios.post("https://webportfolio-backend.onrender.com/api/send-email", formData);
       notyf.success(response.data.message);
       setFormData({ senderName: "", senderEmail: "", subject: "", message: "" });
     } catch (error) {

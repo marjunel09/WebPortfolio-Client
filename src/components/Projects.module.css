@@ -37,7 +37,7 @@
 }
 
 .cardBody {
-  flex-grow: 1; /* Fill remaining space in the card */
+  flex-grow: 1;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;

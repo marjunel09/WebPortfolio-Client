@@ -16,7 +16,7 @@ export default function Projects({ projects }) {
         <div key={index} className="col-lg-12 col-md-12 col-lg-6 col-xl-4"> {/* Update classes */}
           <div className={styles.card}>
             <img
-              src={`http://localhost:4000${project.image}`}
+              src={`https://webportfolio-backend.onrender.com/${project.image}`}
               className={styles.cardImg}
               alt={`${project.title} Screenshot`}
               loading="lazy"
