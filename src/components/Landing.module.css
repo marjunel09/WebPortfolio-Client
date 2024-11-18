@@ -1,0 +1,44 @@
+.landing {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #EFEBA7;
+  font-family: 'Poppins', sans-serif;
+}
+
+.subheading {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 2rem 0;
+  color: #D1D8D6;
+  font-family: 'Poppins', sans-serif;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-top: 1.5rem;
+  color: #ccd9d3;
+  font-family: 'Open Sans', sans-serif;
+}

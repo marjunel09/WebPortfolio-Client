@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  h1, h2, h3, .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+  }
+  

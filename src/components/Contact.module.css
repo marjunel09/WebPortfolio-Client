@@ -1,0 +1,81 @@
+.contactSection {
+    background-color: #657a62;
+    padding: 3rem 0;
+  }
+  
+  .title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #EFEBA7;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #EFEBA7;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #839c85;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .formGroup {
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #EFEBA7;
+    font-weight: 700;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #ebedeb;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #6f9460;
+    box-shadow: 0 0 5px rgba(111, 148, 96, 0.5);
+  }
+  
+  button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #6f9460;
+    color: #EFEBA7;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #5a7a52;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  

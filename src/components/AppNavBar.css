@@ -1,0 +1,33 @@
+.navbar {
+    background-color: #657a62;
+    padding: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .navbar-brand {
+    color: #EFEBA7 !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .navbar-brand:hover {
+    color: #9dba9a !important; 
+  }
+  
+  .nav-link {
+    color: #EFEBA7 !important;
+    font-size: 1rem;
+    margin: 0 0.1rem;
+    transition: color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .nav-link:hover {
+    color: #9dba9a !important;
+  }
+  
+  .nav-link .active {
+    color: #9dba9a !important;
+  }
+  
