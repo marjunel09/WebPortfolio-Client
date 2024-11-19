@@ -15,7 +15,7 @@ export default function Landing() {
       <div className={styles.overlay}></div>
       <div className={`${styles.content} container`}>
         <div className="row">
-          <div className="col-md-8 mx-auto">
+          <div className="col-md-8 mx-auto mt-5 pt-5">
             <h1 className={styles.heading}>Full Stack Web Developer</h1>
             <h4 className={styles.subheading}>Marjunel Lagman</h4>
             <p className={styles.paragraph}>
