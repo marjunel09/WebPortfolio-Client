@@ -1,30 +1,31 @@
 .navbar {
-    background-color: #657a62;
+    background-color: #A2A89D;
     padding: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   }
   
   .navbar-brand {
-    color: #EFEBA7 !important;
+    color: #333 !important;
     font-size: 1.5rem;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
   }
   
   .navbar-brand:hover {
-    color: #9dba9a !important; 
+    color: #EFEBA7 !important; 
   }
   
   .nav-link {
-    color: #EFEBA7 !important;
+    color: #333 !important;
     font-size: 1rem;
     margin: 0 0.1rem;
     transition: color 0.3s ease;
     font-family: 'Poppins', sans-serif;
+    font-weight: 550 !important;
   }
   
   .nav-link:hover {
-    color: #9dba9a !important;
+    color: #EFEBA7 !important;
   }
   
   .nav-link .active {

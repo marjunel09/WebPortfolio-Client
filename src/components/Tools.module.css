@@ -1,15 +1,16 @@
 .toolsSection {
-    background-color: #839c85;
-    color: #657a62;
     padding: 4rem 0;
     overflow-x: hidden;
 }
 
 .coreToolsHeading, .otherToolsHeading {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #EFEBA7;
-    margin-bottom: 2rem;
+    font-size: 2.5rem !important;
+    font-weight: bold !important;
+    color: #4F4E4A;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -24,3 +25,49 @@
 .toolIcon:hover {
     transform: scale(1.1);
 }
+
+.toolWrapper {
+    position: relative;
+    display: inline-block;
+    margin: 2rem 0;
+  }
+  
+  .tooltip {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    bottom: 120%; /* Adjust based on your design */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+  }
+  
+  .toolWrapper:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .toolsArea {
+    position: relative;
+  }
+
+  .toolsArea::after {
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    content: "";
+    height: 300px;
+    width: 400px;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, #c6ff00 60%, #2c6e49 100%);
+    z-index: -1;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.4;
+  }
