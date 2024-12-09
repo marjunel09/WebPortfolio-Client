@@ -25,16 +25,17 @@
   height: 100%;
   border-radius: 8px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  transition: transform 1.5s ease, box-shadow 1.5s ease;
+  transition: transform 1.5s ease, opacity 1.5s ease; /* Add opacity transition */
   background: linear-gradient(to top, #2D3E34, #8aa677);
   opacity: 0.3;
-  transform: translateY(50px); /* Set initial position off-screen */
+  transform: translateY(50px);
 }
 
 .card.visible {
   opacity: 1;
-  transform: translateY(0); /* Set position to original */
+  transform: translateY(0);
 }
+
 
 .card:hover {
   transform: translateY(-5px);
@@ -93,5 +94,11 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    opacity: 1 !important;
   }
 }

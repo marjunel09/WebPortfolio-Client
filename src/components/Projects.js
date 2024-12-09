@@ -30,19 +30,30 @@ const projects = [
 
 export default function Projects() {
   const [visibleCards, setVisibleCards] = useState([]);
-  const cardRefs = useRef(projects.map(() => React.createRef()));
+  const cardRefs = useRef([]);
+
+  // Ensure refs are properly initialized
+  useEffect(() => {
+    cardRefs.current = cardRefs.current.slice(0, projects.length); // Resize the ref array if necessary
+  }, [projects]);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
-          setVisibleCards((prev) => [...prev, index]);
+          setVisibleCards((prev) => {
+            // Ensure the card is added only once to the visibleCards array
+            if (!prev.includes(index)) {
+              return [...prev, index];
+            }
+            return prev;
+          });
         }
       });
-    }, { threshold: 0.3 });
+    }, { threshold: 0.1 }); // Keep the threshold at 0.1 for better sensitivity
 
     cardRefs.current.forEach((ref) => {
-      if (ref.current) observer.observe(ref.current);
+      if (ref) observer.observe(ref);
     });
 
     return () => {
@@ -63,7 +74,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div key={project.id} className="col-lg-12 col-md-12 col-lg-6 col-xl-4">
               <div
-                ref={cardRefs.current[index]}
+                ref={(el) => (cardRefs.current[index] = el)}
                 className={`${styles.card} ${visibleCards.includes(index) ? styles.visible : ''}`}
               >
                 <img
